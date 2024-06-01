@@ -27,9 +27,9 @@ RUN touch /var/run/nginx.pid && \
 
 USER nginx
 
-COPY --from=build /app/dist/frontend-vitkon17/browser/* /usr/share/nginx/html/
+COPY --from=build /app/dist/tg_app/browser/* /usr/share/nginx/html/
 COPY --from=build /app/src/assets /usr/share/nginx/html/assets
 
-EXPOSE 80
+EXPOSE 60
 
 CMD ["nginx", "-g", "daemon off;"]
