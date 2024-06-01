@@ -1,0 +1,19 @@
+<form [formGroup]="connectForm" (ngSubmit)="onSubmit()" class="ConnectForm">
+    <div class="inputbox">
+      <input type="text" id="UserLogin" formControlName="UserLogin" placeholder="Логин" required autocomplete="off" />
+      <label for="UserLogin" id="label"></label>
+    </div>
+    <div class="inputbox">
+      <input type="password" id="UserPassword" formControlName="UserPassword" placeholder="Пароль"
+             spellcheck="false" autocomplete="new-password" required />
+      <label for="UserPassword" id="label"></label>
+    </div>
+    <div class="invalidUsernameOrPassword">{{ errorMessage }}</div>
+    <div class="buttons">
+      <span class="text">
+        <a class="text reset_password" (click)="connectService.islogin=false">Забыл пароль</a>
+      </span>
+      <p-button label="Войти" type="ngSubmit" [disabled]="connectForm.invalid"></p-button>
+    </div>
+  </form>
+  

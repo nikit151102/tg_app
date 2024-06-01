@@ -1,5 +1,5 @@
 {
-  "name": "tg-app",
+  "name": "frontend-vitkon17",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,6 +18,13 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@auth0/angular-jwt": "^5.2.0",
+    "angular-jwt": "^0.1.11",
+    "highcharts-angular": "^4.0.0",
+    "html2canvas": "^1.4.1",
+    "luxon": "^3.4.4",
+    "normalize.css": "^8.0.1",
+    "primeng": "^17.13.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -27,6 +34,7 @@
     "@angular/cli": "^17.3.3",
     "@angular/compiler-cli": "^17.3.0",
     "@types/jasmine": "~5.1.0",
+    "@types/luxon": "^3.4.2",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
