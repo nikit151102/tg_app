@@ -30,6 +30,6 @@ USER nginx
 COPY --from=build /app/dist/tg_app/browser/* /usr/share/nginx/html/
 COPY --from=build /app/src/assets /usr/share/nginx/html/assets
 
-EXPOSE 60
+EXPOSE 8060
 
 CMD ["nginx", "-g", "daemon off;"]
